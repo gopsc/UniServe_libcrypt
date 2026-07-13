@@ -6,11 +6,6 @@
 #include <vector>
 #include <stdexcept>
 
-
-#define CRYPTO_CHECK(condition, message) \
-	if (!(condition)) { \
-		throw std::runtime_error(message); \
-	}
 namespace qing {
 	class AES_CBC: public qing::Crypto_Basic {
 	public:

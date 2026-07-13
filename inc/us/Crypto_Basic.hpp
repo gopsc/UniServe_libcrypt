@@ -2,6 +2,11 @@
 #include <string>
 #include <vector>
 #include <stdexcept>
+
+#define CRYPTO_CHECK(condition, message) \
+	if (!(condition)) { \
+		throw std::runtime_error(message); \
+	}
 namespace qing {
 	class Crypto_Basic {
 		public:
